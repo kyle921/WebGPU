@@ -402,7 +402,7 @@ static inline wbImport_t wbImport_open(const char *file, const char *type0) {
 
   type = wbString_toLower(type0);
 
-  if (wbString_sameQ(type, "cvs")) {
+  if (wbString_sameQ(type, "csv")) {
     kind = wbImportKind_csv;
   } else if (wbString_sameQ(type, "tsv")) {
     kind = wbImportKind_tsv;
